@@ -14,6 +14,7 @@ import Authorized from '@/utils/Authorized';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import { isAntDesignPro, getAuthorityFromRouter } from '@/utils/utils';
 import logo from '../assets/logo.svg';
+
 const noMatch = (
   <Result
     status="403"
@@ -160,7 +161,6 @@ const BasicLayout = props => {
           <span>{route.breadcrumbName}</span>
         );
       }}
-      footerRender={footerRender}
       menuDataRender={menuDataRender}
       formatMessage={formatMessage}
       rightContentRender={() => <RightContent />}
